@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@0;1&display=swap');
+
+#logo {
+	font-family: 'Xanh Mono', monospace;
+	color: black;
+	font-size: x-large;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+h2{
+	font-family: 'Xanh Mono', monospace;
+	color: black;
+	font-size: x-large;
+	text-align: center;
+	padding-top: 18%;
+}
+
+
+/* unvisited link */
+a:link {
+		font-style: italic;
+	color: black;
+	text-decoration-line: none;
+}
+
+/* visited link */
+a:visited {
+		font-style: italic;
+	color: black;
+	text-decoration-line: none;
+}
+
+/* mouse over link */
+a:hover {
+	font-style: normal;
+	text-decoration-line: none;
+	color: hotpink;
+}
+
+/* selected link */
+a:active {
+	font-style: italic;
+	color: black;
+	text-decoration-line: none;
+}
+
+#mydiv {
+	position: absolute;
+	z-index: 9;
+	background-color: #transparent;
+	mix-blend-mode: multiply;
+	size: initial;
+
+}
+
+#mydivheader {
+	padding: 10px;
+	cursor: move;
+	z-index: 10;
+	background-color: #transparent;
+}
+
+
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'ElegantIcons';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: black;
+}
+
+@media screen and (max-width: 480px){
+	
+}
