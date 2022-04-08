@@ -1,20 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@0;1&display=swap');
+
+@font-face {
+    font-family: 'gc16mono_italic';
+    src: url('gc16_mono_italic-webfont.woff2') format('woff2'),
+         url('gc16_mono_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+
+@font-face {
+    font-family: 'gc16mono';
+    src: url('gc16_mono-webfont.woff2') format('woff2'),
+         url('gc16_mono-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 #logo {
-	font-family: 'Xanh Mono', monospace;
-	color: black;
+	font-family: 'gc16mono';
 	font-size: xx-large;
 	display: flex;
 	justify-content: space-between;
 }
 
-
+body{
+	min-width: 50%;
+}
 h2{
-	font-family: 'Xanh Mono', monospace;
-	color: black;
+	font-family: 'gc16mono';
 	font-size: x-large;
 	text-align: center;
 	padding-top: 18%;
+
 }
 
 
@@ -27,57 +46,42 @@ a:link {
 
 /* visited link */
 a:visited {
-		font-style: italic;
-	color: black;
+	font-style: italic;
 	text-decoration-line: none;
+	color: black;
 }
 
 /* mouse over link */
 a:hover {
 	font-style: normal;
 	text-decoration-line: none;
-	color: hotpink;
+	color: black;
 }
 
 /* selected link */
 a:active {
 	font-style: italic;
-	color: black;
 	text-decoration-line: none;
 }
 
-#mydiv {
-	position: absolute;
-	z-index: 9;
-	background-color: #transparent;
-	mix-blend-mode: multiply;
-	size: initial;
-
+::-moz-selection { /* Code for Firefox */
+  color: black;
+  background: yellow;
 }
 
-#mydivheader {
-	padding: 10px;
-	cursor: move;
-	z-index: 10;
-	background-color: #transparent;
+::selection {
+  color: black;
+  background: LemonChiffon;
+}
+
+.dark-mode {
+	color: white;
+  	background-color: black;
 }
 
 
-
-/* Use the following CSS code if you want to use data attributes for inserting your icons */
-[data-icon]:before {
-	font-family: 'ElegantIcons';
-	content: attr(data-icon);
-	speak: none;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	color: black;
-}
-
-@media screen and (max-width: 480px){
-	
+#patos {
+  position: fixed;
+  cursor: move;
+  margin: auto;
 }
