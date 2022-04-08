@@ -84,4 +84,5 @@ a:active {
   position: fixed;
   cursor: move;
   margin: auto;
+	width: 100%;
 }
