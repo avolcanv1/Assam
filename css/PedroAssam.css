@@ -84,6 +84,6 @@ a:active {
   position: fixed;
   cursor: move;
   margin: auto;
-  min-width:25%;
+  min-width: 10%;
   height:auto;;
 }
