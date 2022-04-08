@@ -25,9 +25,7 @@
 	justify-content: space-between;
 }
 
-body{
-	min-width: 50%;
-}
+
 h2{
 	font-family: 'gc16mono';
 	font-size: x-large;
@@ -84,6 +82,6 @@ a:active {
   position: fixed;
   cursor: move;
   margin: auto;
-  max-width: 80%;
-  height:auto;;
+  width: 100%;
+  height:auto;
 }
